@@ -27,6 +27,7 @@ const Router = () => {
                     options={{ 
                         title : '',
                         headerBackTitleVisible: false,
+                        headerTransparent: true,
                     }}>
                 </Stack.Screen>
             </Stack.Navigator>

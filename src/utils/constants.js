@@ -7,7 +7,7 @@ module.exports = {
     COLORS: {
         WARNING: '#FFBC03',
         LIGHT_GRAY: '#D7D7D7',
-        GRAY: 'ACAEAD',
+        GRAY: '#ACAEAD',
         LIGHT: '#FFFFFF',
         PRIMARY: '#5FB1A2',
         TEXT_COLOR: '#121212',
