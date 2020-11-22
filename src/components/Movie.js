@@ -1,8 +1,10 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, Pressable } from 'react-native';
+import { View, StyleSheet, Image, Pressable } from 'react-native';
 import { DateTime } from '../../node_modules/luxon/build/cjs-browser/luxon';
 
 import constants from '../utils/constants';
+
+import Text from '../components/TextCustom';
 
 const Movie = ({movie, navigation}) => {
 
@@ -20,8 +22,8 @@ const Movie = ({movie, navigation}) => {
             <Pressable style={styles.card} onPress={ loadMovie }>
                 <View style={{flex:1, marginLeft: imageMargin}}>
                     <View style={styles.titleContainer}>
-                        <Text numberOfLines={1} style={styles.title}>{title}</Text>
-                        <Text style={styles.vote}>{vote_average}</Text>
+                        <Text fontFamily='bold' numberOfLines={1} style={styles.title}>{title}</Text>
+                        <Text fontFamily='bold' style={styles.vote}>{vote_average}</Text>
                     </View>
                     <Text style={styles.popularity}>{popularity.toFixed(0)}</Text>
                     <Text style={styles.release_date}>{DateTime.fromISO(release_date).setLocale('es').toFormat('MMM, y')}

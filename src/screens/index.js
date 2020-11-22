@@ -1,4 +1,4 @@
-import HomeScreen from "./HomeScreen";
-
 export * from './HomeScreen';
 export * from './DetailsScreen';
+export * from './CastAndCrew';
+export * from './ProfileScreen';
